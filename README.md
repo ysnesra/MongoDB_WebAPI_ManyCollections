@@ -14,6 +14,8 @@ Birden çok tablomuz olduğundan MongDB veritabanı bağlantısını sağlamak i
 
     "this.Collection = db.GetCollection<TEntity>(typeof(TEntity).Name.ToLowerInvariant());"
     
+    
+    
     Bu kodla herbir entity clasımızın isminde MongoDB de tablomuzu oluşturur.
 
     Veritabanına yapılan genel CRUD (Create Read Update Delete) işlemlerimiz için oluşturmuş olduğumuz kodların tekrar kullanılabilirliğini sağlamak için Repository   oluşturuldu.
