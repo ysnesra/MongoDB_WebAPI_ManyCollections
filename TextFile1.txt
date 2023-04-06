@@ -1,0 +1,16 @@
+MongoDB ile WepApi Projesi
+
+MongoShell ekranýnda; User,Product ve Category collectionslarýndan oluþan eStoreDB database'i oluþturuldu.
+
+Birden çok tablomuz olduðundan MongDB veritabaný baðlantýsýný saðlamak için Generic Yapýya taþýdým:
+
+-IGenericRepository ve GenericRepositoryBase ile base classý oluþturuldu
+
+    "this.Collection = db.GetCollection<TEntity>(typeof(TEntity).Name.ToLowerInvariant());" --> kodu herbir entity clasýmýzýn isminde MongoDB de tablomuzu oluþturur.
+
+    Herbir tablomuzun ayrý ayrý Respository lerini oluþturup veritabaný baðlantýlarý saðlandý.
+
+-startup.cs de "services.AddSingleton" iliþkileri verildi.
+
+-Bir Category'ye ait birden fazla Product olabilir durumu Product classýna CategoryId kolonu eklenerek saðlandý
+
