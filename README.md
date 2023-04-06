@@ -13,11 +13,10 @@ Birden çok tablomuz olduğundan MongDB veritabanı bağlantısını sağlamak i
 -IGenericRepository ve GenericRepositoryBase ile base classı oluşturuldu
 
     "this.Collection = db.GetCollection<TEntity>(typeof(TEntity).Name.ToLowerInvariant());"
+    Bu kodla herbir entity clasımızın ismiyle MongoDB deki tablomuzun ismini oluşturur.
     
-    
- Bu kodla herbir entity clasımızın isminde MongoDB de tablomuzu oluşturur.
 
- Veritabanına yapılan genel CRUD (Create Read Update Delete) işlemlerimiz için oluşturmuş olduğumuz kodların tekrar kullanılabilirliğini sağlamak için Repository   oluşturuldu.
+-Veritabanına yapılan genel CRUD (Create Read Update Delete) işlemlerimiz için oluşturmuş olduğumuz kodların tekrar kullanılabilirliğini sağlamak için Repository   oluşturuldu.
     Herbir tablomuzun ayrı ayrı Respository lerini oluşturup veritabanı bağlantıları sağlandı.
 
 -startup.cs de "services.AddSingleton" ilişkileri verildi.
