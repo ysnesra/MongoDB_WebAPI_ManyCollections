@@ -2,7 +2,8 @@
 MongoDB ile WepApi Projesi 
 Generic Repository yapısı ile oluşturuldu.
 
-![repository](https://user-images.githubusercontent.com/104023688/230404500-dd8a8a97-e028-49c5-9b8f-255840dc7b4b.jpg)
+![repository](https://user-images.githubusercontent.com/104023688/230406499-6bc47bc4-5706-414d-93c8-31bd47d4551d.jpg)
+
 
 
 MongoDB Shell ekranında; User,Product ve Category collectionslarından oluşan eStoreDB database'i oluşturuldu.
