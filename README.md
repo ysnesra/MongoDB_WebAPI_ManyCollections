@@ -1,11 +1,9 @@
 # MongoDB_WebAPI_ManyCollections
 MongoDB ile WepApi Projesi 
-Generic Repository yapısı ile oluşturuldu.
-
 ![repository](https://user-images.githubusercontent.com/104023688/230406499-6bc47bc4-5706-414d-93c8-31bd47d4551d.jpg)
 
 
-
+Generic Repository yapısı ile oluşturuldu.
 MongoDB Shell ekranında; User,Product ve Category collectionslarından oluşan eStoreDB database'i oluşturuldu.
 
 Birden çok tablomuz olduğundan MongDB veritabanı bağlantısını sağlamak için Generic Yapıya taşıdım:
