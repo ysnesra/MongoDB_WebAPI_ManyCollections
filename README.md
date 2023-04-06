@@ -1,15 +1,21 @@
 # MongoDB_WebAPI_ManyCollections
 MongoDB ile WepApi Projesi 
+Generic Repository yapısı ile oluşturuldu.
+
+![repository](https://user-images.githubusercontent.com/104023688/230404500-dd8a8a97-e028-49c5-9b8f-255840dc7b4b.jpg)
 
 
-MongoShell ekranında; User,Product ve Category collectionslarından oluşan eStoreDB database'i oluşturuldu.
+MongoDB Shell ekranında; User,Product ve Category collectionslarından oluşan eStoreDB database'i oluşturuldu.
 
 Birden çok tablomuz olduğundan MongDB veritabanı bağlantısını sağlamak için Generic Yapıya taşıdım:
 
 -IGenericRepository ve GenericRepositoryBase ile base classı oluşturuldu
 
-    "this.Collection = db.GetCollection<TEntity>(typeof(TEntity).Name.ToLowerInvariant());" --> kodu herbir entity clasımızın isminde MongoDB de tablomuzu oluşturur.
+    "this.Collection = db.GetCollection<TEntity>(typeof(TEntity).Name.ToLowerInvariant());"
+    
+    Bu kodla herbir entity clasımızın isminde MongoDB de tablomuzu oluşturur.
 
+    Veritabanına yapılan genel CRUD (Create Read Update Delete) işlemlerimiz için oluşturmuş olduğumuz kodların tekrar kullanılabilirliğini sağlamak için Repository   oluşturuldu.
     Herbir tablomuzun ayrı ayrı Respository lerini oluşturup veritabanı bağlantıları sağlandı.
 
 -startup.cs de "services.AddSingleton" ilişkileri verildi.
